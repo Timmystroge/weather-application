@@ -22,34 +22,3 @@ const getCity = async (city) => {
   return data[0];
 };
 
-/*
-? getCity("manchester")
-  .then((data) => {
-    return getWeather(data.Key);
-  })
-  .then((data) => {
-    log(data);
-  })
-  .catch((err) => {
-    log(err);
-  });
-  */
-
-/*
- ? my own Version 
-const getWeather2 = async (id) => {
-  const response = await fetch(
-    `http://dataservice.accuweather.com/currentconditions/v1/${id}?apikey=${key}`
-  );
-  const data = response.json();
-  return data[0];
-};
-
-const getCity2 = async (city) => {
-  const response = await fetch(
-    `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=${city}`
-  );
-  const data = await response.json();
-  return data[0];
-};
-*/
